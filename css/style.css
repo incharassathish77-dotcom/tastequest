@@ -1,0 +1,118 @@
+/* ==============================
+   FOODIE TRAILS - BASIC CSS
+   ============================== */
+
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f5ed;
+    color: #333333;
+}
+
+
+/* Header */
+header {
+    background-color: #315c45;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Website Title */
+h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+
+
+/* Navigation */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 17px;
+}
+
+
+/* Navigation Hover */
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Sections */
+section {
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* Section Headings */
+h2 {
+    color: #315c45;
+    font-size: 28px;
+}
+
+
+/* Paragraphs */
+p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* Hero Section */
+section:first-child {
+    text-align: center;
+    background-color: #e8f0e5;
+}
+
+
+/* Hero Heading */
+section:first-child h2 {
+    font-size: 36px;
+}
+
+
+/* Explore Button */
+section:first-child a {
+    display: inline-block;
+    background-color: #315c45;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+/* State and Dish Names */
+h3 {
+    color: #8b5e34;
+    font-size: 21px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #315c45;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* Footer Paragraph */
+footer p {
+    margin: 0;
+}
