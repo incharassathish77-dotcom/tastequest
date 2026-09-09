@@ -1,5 +1,5 @@
 /* ==============================
-   FOODIE TRAILS - BASIC CSS
+   TASTE QUEST - BASIC CSS
    ============================== */
 
 
@@ -115,4 +115,97 @@ footer {
 /* Footer Paragraph */
 footer p {
     margin: 0;
+}
+/* =================================
+   STATES PAGE
+   ================================= */
+
+
+/* States Introduction */
+
+#states-intro {
+    text-align: center;
+    background-color: #e8f0e5;
+}
+
+
+/* States Heading */
+
+#states-intro h2 {
+    font-size: 36px;
+}
+
+
+/* State List */
+
+#state-list {
+    text-align: center;
+}
+
+
+/* State Container */
+
+.state-container {
+    margin-top: 30px;
+}
+
+
+/* State Cards */
+
+.state-card {
+    display: inline-block;
+    width: 250px;
+    min-height: 170px;
+    margin: 15px;
+    padding: 20px;
+    background-color: #f8f5ed;
+    border: 2px solid #315c45;
+    border-radius: 10px;
+    vertical-align: top;
+}
+
+
+/* State Card Heading */
+
+.state-card h3 {
+    color: #315c45;
+    font-size: 24px;
+}
+
+
+/* State Card Link */
+
+.state-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #315c45;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Link Hover */
+
+.state-card a:hover {
+    background-color: #8b5e34;
+}
+/* =================================
+   FOOD IMAGES
+   ================================= */
+
+.state-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.state-card {
+    overflow: hidden;
+}
+
+.state-card h3 {
+    margin-top: 15px;
 }
