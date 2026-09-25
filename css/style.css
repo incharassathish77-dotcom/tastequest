@@ -1,211 +1,541 @@
-/* ==============================
-   TASTE QUEST - BASIC CSS
-   ============================== */
+/* =========================
+   GENERAL PAGE
+   ========================= */
 
-
-/* Element Selector */
 body {
+
     font-family: Arial, sans-serif;
+
     margin: 0;
+
     background-color: #f8f5ed;
+
     color: #333333;
+
 }
 
 
-/* Header */
+/* =========================
+   HEADER
+   ========================= */
+
 header {
+
     background-color: #315c45;
+
     color: white;
-    padding: 20px;
+
     text-align: center;
+
+    padding: 25px;
+
 }
 
 
-/* Website Title */
-h1 {
-    font-size: 40px;
+header h1 {
+
+    font-size: 42px;
+
     margin: 10px;
+
 }
 
 
-/* Navigation */
+header p {
+
+    font-size: 18px;
+
+}
+
+
 nav {
+
     margin-top: 20px;
+
 }
+
 
 nav a {
+
     color: white;
+
     text-decoration: none;
-    margin: 10px;
+
+    margin: 12px;
+
     font-size: 17px;
+
 }
 
 
-/* Navigation Hover */
 nav a:hover {
+
     text-decoration: underline;
+
 }
 
 
-/* Main Sections */
+/* =========================
+   SECTIONS
+   ========================= */
+
 section {
+
     padding: 40px;
-    margin: 20px;
+
+    margin: 25px;
+
     background-color: white;
-    border-radius: 10px;
+
+    border-radius: 12px;
+
 }
 
 
-/* Section Headings */
-h2 {
+section h2 {
+
     color: #315c45;
-    font-size: 28px;
+
+    font-size: 30px;
+
 }
 
 
-/* Paragraphs */
-p {
+section p {
+
     font-size: 17px;
+
     line-height: 1.6;
+
 }
 
 
-/* Hero Section */
-section:first-child {
+/* =========================
+   HERO SECTION
+   ========================= */
+
+#hero {
+
     text-align: center;
+
     background-color: #e8f0e5;
+
+    padding: 70px 40px;
+
 }
 
 
-/* Hero Heading */
-section:first-child h2 {
-    font-size: 36px;
+#hero h2 {
+
+    font-size: 42px;
+
+    color: #315c45;
+
 }
 
 
-/* Explore Button */
-section:first-child a {
+#hero p {
+
+    font-size: 20px;
+
+}
+
+
+#hero a {
+
     display: inline-block;
+
     background-color: #315c45;
+
     color: white;
-    padding: 12px 25px;
+
     text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+
+    padding: 14px 25px;
+
+    border-radius: 6px;
+
+    margin-top: 15px;
+
 }
 
 
-/* State and Dish Names */
-h3 {
-    color: #8b5e34;
-    font-size: 21px;
+#hero a:hover {
+
+    background-color: #8b5e34;
+
 }
 
 
-/* Footer */
-footer {
+/* =========================
+   SEARCH SECTION
+   ========================= */
+
+#search-section {
+
+    text-align: center;
+
+}
+
+
+#foodSearch {
+
+    width: 300px;
+
+    padding: 12px;
+
+    border: 2px solid #315c45;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+}
+
+
+button {
+
     background-color: #315c45;
+
     color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: #8b5e34;
+
+}
+
+
+#searchResult {
+
+    color: #8b5e34;
+
+    font-weight: bold;
+
+    margin-top: 20px;
+
+}
+
+
+/* =========================
+   STATE SECTION
+   ========================= */
+
+#state-section {
+
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+
 }
 
 
-/* Footer Paragraph */
-footer p {
-    margin: 0;
+#state {
+
+    width: 280px;
+
+    padding: 12px;
+
+    border: 2px solid #315c45;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
 }
-/* =================================
-   STATES PAGE
-   ================================= */
 
 
-/* States Introduction */
+/* =========================
+   DISH CARDS
+   ========================= */
 
-#states-intro {
+#popular-dishes {
+
     text-align: center;
-    background-color: #e8f0e5;
+
 }
 
 
-/* States Heading */
+.dish-card {
 
-#states-intro h2 {
-    font-size: 36px;
-}
-
-
-/* State List */
-
-#state-list {
-    text-align: center;
-}
-
-
-/* State Container */
-
-.state-container {
-    margin-top: 30px;
-}
-
-
-/* State Cards */
-
-.state-card {
     display: inline-block;
-    width: 250px;
-    min-height: 170px;
+
+    width: 280px;
+
+    min-height: 390px;
+
     margin: 15px;
-    padding: 20px;
+
+    padding: 15px;
+
+    background-color: #f8f5ed;
+
+    border: 2px solid #315c45;
+
+    border-radius: 12px;
+
+    vertical-align: top;
+
+}
+
+
+.dish-card:hover {
+
+    border-color: #8b5e34;
+
+}
+
+
+.dish-card img {
+
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+}
+
+
+.dish-card h3 {
+
+    color: #315c45;
+
+    font-size: 23px;
+
+}
+
+
+.dish-card a {
+
+    display: inline-block;
+
+    background-color: #315c45;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 5px;
+
+    margin-top: 10px;
+
+}
+
+
+.dish-card a:hover {
+
+    background-color: #8b5e34;
+
+}
+
+
+/* =========================
+   PLACES
+   ========================= */
+
+#places {
+
+    background-color: #e8f0e5;
+
+}
+
+
+#places h3 {
+
+    color: #8b5e34;
+
+    font-size: 24px;
+
+}
+
+
+#places a {
+
+    display: inline-block;
+
+    background-color: #315c45;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 20px;
+
+    border-radius: 5px;
+
+}
+
+
+#places a:hover {
+
+    background-color: #8b5e34;
+
+}
+
+
+/* =========================
+   REVIEWS
+   ========================= */
+
+#reviews h3 {
+
+    color: #8b5e34;
+
+}
+
+
+#reviews a {
+
+    color: #315c45;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   FOOD FACT
+   ========================= */
+
+#food-fact {
+
+    text-align: center;
+
+    background-color: #f3eadc;
+
+}
+
+
+#fact {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+
+    background-color: #315c45;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 30px;
+
+}
+
+
+footer p {
+
+    margin: 8px;
+
+}
+.review-card {
     background-color: #f8f5ed;
     border: 2px solid #315c45;
     border-radius: 10px;
-    vertical-align: top;
+    padding: 20px;
+    margin: 15px 0;
 }
 
-
-/* State Card Heading */
-
-.state-card h3 {
+.review-card h3 {
     color: #315c45;
-    font-size: 24px;
 }
 
-
-/* State Card Link */
-
-.state-card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #315c45;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.review-card p {
+    font-size: 16px;
 }
-
-
-/* Link Hover */
-
-.state-card a:hover {
+.review-card button {
     background-color: #8b5e34;
-}
-/* =================================
-   FOOD IMAGES
-   ================================= */
-
-.state-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
+    margin-top: 10px;
 }
 
-.state-card {
-    overflow: hidden;
+.review-card button:hover {
+    background-color: #315c45;
+}
+#selectedPlace {
+    color: #8b5e34;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* REVIEW CARD */
+
+.review-card {
+
+    background-color: #f8f5ed;
+
+    border: 2px solid #315c45;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin: 15px 0;
+
 }
 
-.state-card h3 {
-    margin-top: 15px;
+
+.review-card h3 {
+
+    color: #315c45;
+
+}
+
+
+.review-card p {
+
+    font-size: 16px;
+
+}
+
+
+.review-card button {
+
+    background-color: #8b5e34;
+
+    margin-top: 10px;
+
+}
+
+
+.review-card button:hover {
+
+    background-color: #315c45;
+
+}
+
+
+#selectedPlace {
+
+    color: #8b5e34;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
 }

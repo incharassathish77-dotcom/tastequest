@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Mysore Pak Reviews - TasteQuest</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>TasteQuest</h1>
+
+        <p>Discover India Through Its Food</p>
+
+        <nav>
+
+            <a href="../index.html">Home</a>
+            <a href="states.html">States</a>
+            <a href="dishes.html">Dishes</a>
+            <a href="places.html">Places</a>
+            <a href="reviews.html">Reviews</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- INTRODUCTION -->
+
+    <section id="states-intro">
+
+        <h2>Mysore Pak Reviews</h2>
+
+        <p>
+            Read reviews and share your own food experience.
+        </p>
+
+        <p id="selectedPlace"></p>
+
+    </section>
+
+
+    <!-- EXISTING REVIEWS -->
+
+    <section>
+
+        <h2>Customer Reviews</h2>
+
+
+        <h3>Priya ⭐⭐⭐⭐⭐</h3>
+
+        <p>
+            The Mysore Pak was soft and delicious.
+        </p>
+
+
+        <h3>Rahul ⭐⭐⭐⭐</h3>
+
+        <p>
+            I really enjoyed the traditional taste.
+        </p>
+
+
+        <h3>Anu ⭐⭐⭐⭐⭐</h3>
+
+        <p>
+            A nice place to try authentic Mysore Pak.
+        </p>
+
+    </section>
+
+
+    <!-- WRITE REVIEW -->
+
+    <section>
+
+        <h2>Write Your Review</h2>
+
+        <form onsubmit="return submitReview()">
+
+
+            <label for="name">
+                Your Name:
+            </label>
+
+            <br>
+
+            <input type="text" id="name">
+
+            <br><br>
+
+
+            <label for="place">
+                Place:
+            </label>
+
+            <br>
+
+            <input
+                type="text"
+                id="place"
+                readonly
+            >
+
+            <br><br>
+
+
+            <label for="rating">
+                Rating (1-5):
+            </label>
+
+            <br>
+
+            <input
+                type="number"
+                id="rating"
+                min="1"
+                max="5"
+            >
+
+            <br><br>
+
+
+            <label for="review">
+                Your Review:
+            </label>
+
+            <br>
+
+            <textarea
+                id="review"
+                rows="5"
+                cols="40"
+            ></textarea>
+
+            <br><br>
+
+
+            <button type="submit">
+                Submit Review
+            </button>
+
+
+        </form>
+
+
+        <p id="reviewResult"></p>
+
+
+        <!-- NEW REVIEWS -->
+
+        <h2>New Reviews</h2>
+
+        <div id="newReviews"></div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>© 2026 TasteQuest</p>
+
+        <p>
+            Explore India. Discover Food. Create Memories.
+        </p>
+
+    </footer>
+
+
+    <!-- EXTERNAL JAVASCRIPT -->
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,110 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Explore States | TasteQuest</title>
+    <title>States - TasteQuest</title>
 
     <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
+
     <header>
 
         <h1>TasteQuest</h1>
 
+        <p>Discover India Through Its Food</p>
+
         <nav>
+
             <a href="../index.html">Home</a>
             <a href="states.html">States</a>
-            <a href="#">Dishes</a>
-            <a href="#">Places</a>
-            <a href="#">Reviews</a>
+            <a href="dishes.html">Dishes</a>
+            <a href="places.html">Places</a>
+            <a href="reviews.html">Reviews</a>
+
         </nav>
 
     </header>
 
 
-    <!-- Main Content -->
-    <main>
+    <!-- INTRODUCTION -->
 
-        <!-- Introduction -->
-        <section id="states-intro">
+    <section id="states-intro">
 
-            <h2>Explore India Through Flavours</h2>
+        <h2>Explore Indian States</h2>
 
-            <p>
-                Choose a state and discover its traditional
-                dishes, food culture and special flavours.
-            </p>
+        <p>
+            Choose a state and discover
+            its traditional food.
+        </p>
 
-        </section>
+    </section>
 
 
-        <!-- States -->
-        <section id="state-list">
+    <!-- FIND STATE -->
 
-            <h2>Choose Your State</h2>
+    <section>
 
-            <div class="state-container">
+        <h2>Find a State</h2>
 
-                <div class="state-card">
-                    <h3>Karnataka</h3>
-                    <p>Discover the rich flavours of Karnataka.</p>
-                    <a href="karnataka.html">Explore Karnataka</a>
-                </div>
+        <input
+            type="text"
+            id="stateName"
+            placeholder="Enter state name"
+        >
 
+        <button onclick="findState()">
+            Search
+        </button>
 
-                <div class="state-card">
-                    <h3>Kerala</h3>
-                    <p>Explore the traditional tastes of Kerala.</p>
-                    <a href="#">Explore Kerala</a>
-                </div>
+        <p id="stateResult"></p>
 
-
-                <div class="state-card">
-                    <h3>Tamil Nadu</h3>
-                    <p>Experience the delicious cuisine of Tamil Nadu.</p>
-                    <a href="#">Explore Tamil Nadu</a>
-                </div>
+    </section>
 
 
-                <div class="state-card">
-                    <h3>Punjab</h3>
-                    <p>Enjoy the bold and rich flavours of Punjab.</p>
-                    <a href="#">Explore Punjab</a>
-                </div>
+    <!-- STATE LIST -->
+
+    <section id="state-list">
+
+        <h2>Popular States</h2>
 
 
-                <div class="state-card">
-                    <h3>Rajasthan</h3>
-                    <p>Discover the royal flavours of Rajasthan.</p>
-                    <a href="#">Explore Rajasthan</a>
-                </div>
+        <div class="state-container">
 
 
-                <div class="state-card">
-                    <h3>Gujarat</h3>
-                    <p>Explore the unique cuisine of Gujarat.</p>
-                    <a href="#">Explore Gujarat</a>
-                </div>
+            <div class="state-card">
+
+                <h3>Karnataka</h3>
+
+                <p>
+                    Explore Mysore Pak,
+                    Masala Dosa and more.
+                </p>
+
+                <a href="karnataka.html">
+                    Explore
+                </a>
 
             </div>
 
-        </section>
 
-    </main>
+            <div class="state-card">
+
+                <h3>Kerala</h3>
+
+                <p>
+                    Discover traditional
+                    Kerala flavours.
+                </p>
+
+                <a href="#">
+                    Coming Soon
+                </a>
+
+            </div>
 
 
-    <!-- Footer -->
+            <div class="state-card">
+
+                <h3>Tamil Nadu</h3>
+
+                <p>
+                    Discover delicious
+                    Tamil Nadu dishes.
+                </p>
+
+                <a href="#">
+                    Coming Soon
+                </a>
+
+            </div>
+
+
+            <div class="state-card">
+
+                <h3>Punjab</h3>
+
+                <p>
+                    Explore famous
+                    Punjabi food.
+                </p>
+
+                <a href="#">
+                    Coming Soon
+                </a>
+
+            </div>
+
+
+            <div class="state-card">
+
+                <h3>Rajasthan</h3>
+
+                <p>
+                    Discover traditional
+                    Rajasthani cuisine.
+                </p>
+
+                <a href="#">
+                    Coming Soon
+                </a>
+
+            </div>
+
+
+            <div class="state-card">
+
+                <h3>Gujarat</h3>
+
+                <p>
+                    Explore famous
+                    Gujarati dishes.
+                </p>
+
+                <a href="#">
+                    Coming Soon
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
     <footer>
 
-        <p>&copy; 2026 TasteQuest. Explore. Eat. Enjoy.</p>
+        <p>© 2026 TasteQuest</p>
+
+        <p>
+            Explore India. Discover Food. Create Memories.
+        </p>
 
     </footer>
+
+
+    <!-- EXTERNAL JAVASCRIPT -->
+
+    <script src="../js/script.js"></script>
 
 </body>
 
